@@ -1,0 +1,53 @@
+---
+title: "Week 2 homework assignment"
+author: Student Name
+date: Due Date
+output: github_document
+editor_options:
+  chunk_output_type: inline
+---
+
+## DSI-EDA
+## Professor Cassy Dorff
+
+```{r, include=FALSE}
+library(rmarkdown)
+library(data.table)
+library(tidyverse)
+library(datasets)
+```
+
+## Homework Assignment
+*(Due Date: Thursday before class, 9:35 AM CST)*
+
+Let's practice what we've learned about data.table, tidyverse, and summarizing data so far. We're going to be working with one of R's built-in datasets. These data are included with the base installation of R for learning purposes. Loading the library `datasets` makes 30+ data objects available to your R session. Today's dataset is named `UCBAdmissions` and provides data on student admissions to University of California, Berkeley.
+
+To submit this assignment, knit it to github flavored markdown and submit all your work on GitHub.
+
+*Question 1*: What kind of dataset is UCBAdmissions? Include the command you used to find out. Convert `UCBAdmissions` to a data.table object and a data.frame object.
+
+```{r}
+## The type of dataset is...?
+
+## Convert to data.table
+admissions_dt <-
+
+## Convert to data.frame
+admissions_df <-    
+```
+
+*Question 2*: Using data.table syntax, sum the number of applicants by department and save the output as a new data object. Then, using tidyverse syntax, again sum the number of applicants by department and save the output as a new data object. Make sure you use the right type of object (data.table or data.frame) with the right syntax!
+
+```{r}
+## Sum using data.table syntax
+sum_dt <-
+
+## Sum using tidyverse syntax
+sum_df <-
+```
+
+*Question 3*: You can use the help operator, `?`, to get help with any function in R. For example, if you wanted to get help with the `names()` function, you would use `?names()`. You can also get help with a whole library. For example, you could use `?tidyverse` to get help with the tidyverse library. Using the help function, describe as best you can the differences between the data.table and tidyverse methods above. Do you prefer one over the other? Why or why not?
+
+
+
+*Question 4*: Using either method above, find the average department admittance rate for observations with `Female` in the gender column.
