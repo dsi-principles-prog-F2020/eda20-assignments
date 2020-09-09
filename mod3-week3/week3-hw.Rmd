@@ -1,0 +1,42 @@
+---
+title: "Week 3 homework assignment"
+author: Student Name
+date: Due Date
+output: github_document
+editor_options:
+  chunk_output_type: inline
+---
+
+## DSI-EDA
+## Professor Cassy Dorff
+
+This homework is designed to get you to review the in-class notes + r code as well as work on your own code.
+
+## Part 1: Midwest Data
+
+Recall our use of the `midwest` data from week3-day1. 
+
+1. In your own words, what does the function in this line of "week3-day1.Rmd"  do?
+```{r}
+g1 <- g1 + scale_y_continuous(breaks=seq(0, 1000000, 200000), labels = function(x){paste0(x/1000, 'K')})
+```
+
+2. Starting with one variable: During week3-day1, we learned about how to make a scatterplot in ggplot using `midwest` data. This was a useful illustration for how to (1) make a guess at a bivariate relationship in the data and (2) explore it using a scatterplot. But ultimately the graphic wasn't that interesting. Sometimes we need to take a step back and simply plot one variable at a time. 
+
+Explore the relationship of population totals by state. Include a clear title, and change the xlab and ylab to be easy to read words (labels), try using geom_col for this. Interestingly you *could* force the outcome using geom_histogram() but typically we want to use histograms for a singular variable.
+
+```{r}
+# answer 
+
+```
+
+3. Make a histogram and density plot for the percent of people below poverty
+
+```{r}
+#answer
+
+```
+
+## Part 3
+
+In class we worked on Nashville schools data. Print one `best` graphic from the Nashville schools data and write one paragraph about the graphic. If you are using the graphic your group made, try to improve it. As an added challenge for those who want one, create a completely different graphic. What did you learn? Why is this interesting? 
